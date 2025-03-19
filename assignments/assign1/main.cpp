@@ -105,6 +105,7 @@ void write_courses_offered(std::vector<Course>& all_courses) {
       }
     }  
   }
+  ofs.close();
 
   for (auto& elem : need_delete) {
     delete_elem_from_vector(all_courses, elem);
